@@ -1,0 +1,50 @@
+﻿# --- secrets / local state ---
+.env
+*.key
+secrets.json
+last-token.txt
+*credentials*
+
+# --- logs ---
+*.log
+logs/
+*.err.txt
+*.out.txt
+
+# --- python ---
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# --- node ---
+node_modules/
+package-lock.json
+
+# --- build / binaries ---
+*.exe
+*.dll
+*.pdb
+bin/
+obj/
+dist/
+build/
+
+# --- models / media / outputs ---
+*.gguf
+*.onnx
+*.pt
+*.safetensors
+*.png
+*.jpg
+*.jpeg
+*.webp
+!docs-*.png
+ComfyUI-Output/
+output/
+
+# --- editor / os ---
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini

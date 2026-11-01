@@ -1,0 +1,9 @@
+FROM openbmb/minicpm5-2b:latest
+
+# Ollama's default context for this model is 4096, which silently truncates
+# long DSH prompts. 32768 matches the Bonsai local route so both local models
+# are declared consistently on the DSH side.
+PARAMETER num_ctx 32768
+
+# Keep the whole 2 GB model resident so DSH turns do not pay a reload each time.
+PARAMETER num_keep 0

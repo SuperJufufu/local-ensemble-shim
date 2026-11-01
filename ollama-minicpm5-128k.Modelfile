@@ -1,0 +1,5 @@
+FROM openbmb/minicpm5-2b:latest
+
+# minicpm5-2b 的原生 context length 是 131072（ollama show 可查）。
+# 这里把它拉满，用于实测「128k 到底能不能跑、跑起来吃多少显存」。
+PARAMETER num_ctx 131072
