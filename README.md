@@ -45,6 +45,7 @@ test_*.py            自测：路由、真流式、流式工具调用、上下�
 ab_penalty.py        A/B 对比不同惩罚参数下的退化率
 capture_sse.py       SSE 帧抓取，用于核对"是不是真的流式"
 check_degeneration.py / score_repair.py / score_rules.py   退化与修复打分
+probe_edit_args.py / probe_empty_arg.py   工具调用参数探查（复现参数漏填 / 编造原文）
 read-dsh-session.js  读 DSH 会话日志（zstd 多帧），复现具体上下文
 ```
 
